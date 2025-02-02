@@ -3,8 +3,9 @@ import { BASE_URL } from "./utils/constants";
 import { useDispatch } from "react-redux";
 import { removeUserFromFeed } from "./utils/feedSlice";
 
-const UserCard = ({user}) =>{
-   const {_id,firstName, lastName, age,gender,about,photoUrl} = user;
+const UserCard = ({user:any}) =>{
+   // eslint-disable-next-line no-undef, no-unused-vars
+   const {_id,firstName, lastName,photoUrl, age,gender,about} = user;
    const dispatch = useDispatch();
 
    const handleSendRequest = async(status,userId) =>{
@@ -15,6 +16,8 @@ const UserCard = ({user}) =>{
       dispatch(removeUserFromFeed(userId));
     }
     catch(err){
+      console.log(err);
+      
       //
     }
    }
