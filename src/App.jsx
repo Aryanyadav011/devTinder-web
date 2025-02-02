@@ -13,7 +13,7 @@ import Requests from "./Requests";
 function App() {
   
   return (
-    <div >
+    <>
       <Provider store = {appStore}>
     <BrowserRouter basename="/">
     <Routes>
@@ -32,7 +32,7 @@ function App() {
     {/* <NavBar/> */}
     {/* <h1 className = "text-3xl font-bold ">Hello world</h1> */}
     
-    </div>
+    </>
   );
 }
 
