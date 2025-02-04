@@ -3,7 +3,7 @@ import { BASE_URL } from "./utils/constants";
 import { useDispatch } from "react-redux";
 import { removeUserFromFeed } from "./utils/feedSlice";
 
-const UserCard = ({user:any}) =>{
+const UserCard = ({user}) =>{
    // eslint-disable-next-line no-undef, no-unused-vars
    const {_id,firstName, lastName,photoUrl, age,gender,about} = user;
    const dispatch = useDispatch();
