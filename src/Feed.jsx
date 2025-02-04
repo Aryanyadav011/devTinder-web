@@ -3,7 +3,9 @@ import { BASE_URL } from "./utils/constants";
 import { useDispatch, useSelector } from "react-redux";
 import { addFeed } from "./utils/feedSlice";
 import { useEffect } from "react";
-import UserCard from "./userCard";
+ 
+import UserCard from "./UserCard";
+
 
 
 const Feed = ()=>{
@@ -44,3 +46,5 @@ const Feed = ()=>{
    
 };
 export default Feed;
+
+

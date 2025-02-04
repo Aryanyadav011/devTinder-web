@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { removeUserFromFeed } from "./utils/feedSlice";
 
 const UserCard = ({user}) =>{
+
    // eslint-disable-next-line no-undef, no-unused-vars
    const {_id,firstName, lastName,photoUrl, age,gender,about} = user;
    const dispatch = useDispatch();
@@ -45,3 +46,7 @@ const UserCard = ({user}) =>{
     );
 };
 export default UserCard;
+
+
+
+
