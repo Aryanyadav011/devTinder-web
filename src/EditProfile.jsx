@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import UserCard from "./UserCard";
 import { BASE_URL } from "./utils/constants";
